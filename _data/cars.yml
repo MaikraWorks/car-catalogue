@@ -1,0 +1,10 @@
+- make: "Toyota"
+  model: "Camry"
+  year: 2024
+  price: 28500
+  image: "assets/images/camry.jpg"
+- make: "Honda"
+  model: "Civic"
+  year: 2023
+  price: 25000
+  image: "assets/images/civic.jpg"

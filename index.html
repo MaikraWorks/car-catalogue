@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<h1>Car Catalogue</h1>
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  {% for car in site.data.cars %}
+  <div style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; width: 250px;">
+    <img src="{{ car.image | relative_url }}" style="width: 100%; border-radius: 4px;">
+    <h3>{{ car.year }} {{ car.make }} {{ car.model }}</h3>
+    <p style="font-weight: bold; color: #2ecc71;">${{ car.price }}</p>
+  </div>
+  {% endfor %}
+</div>
